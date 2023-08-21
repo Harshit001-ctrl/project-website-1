@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92f4809345.js" crossorigin="anonymous"></script>
+
+    <style>
+        * {
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+
+        /* 
+        ::-webkit-scrollbar {
+            background-color: transparent;
+            width: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: royalblue;
+            border-radius: 100px;
+        } */
+
+
+        .top {
+            margin: 20px;
+            padding: 2px;
+            margin-left: 40px;
+            font-style: normal;
+        }
+
+        /* .navbar */
+        .navbar {
+            font-size: 15px;
+            color: dark black;
+            width: 100%;
+            position: sticky;
+            top: 3px;
+            background-color: white;
+            display: flex;
+        }
+
+        .left {
+            display: flex;
+            width: 60%;
+            font-size: 50px;
+            margin-left: 30px;
+
+        }
+
+        .right {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+            font-size: 17px;
+            align-items: center;
+
+        }
+
+        .right a {
+            text-decoration: none;
+            padding: 18px;
+            color: black;
+        }
+
+        .home a {
+            color: blueviolet;
+        }
+
+        .right a:hover {
+            background-color: crimson;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .box {
+            padding: 9px;
+            color: white;
+            text-decoration: none;
+            background-color: skyblue;
+        }
+
+        .navbar .left {
+            color: blue;
+        }
+
+        /* NAVBAR END */
+
+
+
+        /* image start */
+
+        .box1 {
+            height: 1000px;
+            width: 50%;
+            align-items: center;
+            display: flex;
+            box-sizing: border-box;
+            padding: 60px;
+            font-size: 58px;
+            color: wheat;
+            background-color: blue;
+        }
+
+        .image {
+            display: flex;
+
+        }
+
+        .right {
+            width: 50%;
+        }
+
+        /* image end */
+
+        /* about start  */
+
+
+
+        .left1 {
+            display: flex;
+            margin: 100px;
+            width: 60%;
+
+        }
+
+        .img {
+            margin-top: -250px;
+            width: 60%;
+            /* margin: 100px; */
+
+        }
+
+        .right1 {
+            float: right;
+            margin-top: -700px;
+            width: 40%;
+            justify-content: space-between;
+            align-items: center;
+            /* color: salmon; */
+        }
+
+        .right1 p {
+            color: blue;
+            font-weight: bolder;
+        }
+
+        /* about end */
+
+
+        /* service start */
+
+        .box2 {
+            border: 1px grey;
+            border-style: dotted;
+            height: 40px;
+            width: 135px;
+            margin-left: 880px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 30px;
+            color: gray;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+
+        .box2:hover {
+            background-color: blueviolet;
+            color: bisque;
+        }
+
+        .health {
+            color: gray;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            font-size: 30px;
+        }
+
+        /* service end */
+
+        /* solution satrt */
+
+
+
+        .dieases {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+
+        .solution1 {
+            height: 40vh;
+            /* background-color: red; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vh;
+            box-sizing: border-box;
+            padding: 2px;
+            font-size: x-large;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content1 {
+            transform: translateY(100%);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            color: darkmagenta;
+            background-color: burlywood;
+        }
+
+        .solution1:hover .content1 {
+            transform: translateY(0);
+        }
+
+        .solution1:hover.solution1 {
+            transform: translateX(10%);
+        }
+
+        .solution2 {
+            height: 40vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50vh;
+            padding: 5px;
+            font-size: x-large;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .content2 {
+            transform: translateY(100%);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            color: darkmagenta;
+            background-color: burlywood;
+
+        }
+
+        .solution2:hover .content2 {
+            transform: translateY(0);
+        }
+
+        .solution2:hover.solution2 {
+            transform: translateX(10%);
+        }
+
+        .solution3 {
+            /* background-color: red; */
+            height: 40vh;
+            width: 50vh;
+            padding: 5px;
+            font-size: x-large;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content3 {
+            transform: translatey(100%);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            color: darkmagenta;
+            background-color: burlywood;
+        }
+
+        .solution3:hover .content3 {
+            transform: translatey(0);
+        }
+
+        .solution3:hover.solution3 {
+            transform: translatex(10%);
+        }
+
+
+
+        .dieases2 {
+            display: flex;
+            box-sizing: border-box;
+            justify-content: space-evenly;
+        }
+
+
+        .solution4 {
+            /* background-color: red; */
+            height: 40vh;
+            width: 50vh;
+            padding: 5px;
+            font-size: x-large;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content4 {
+            transform: translatey(100%);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            color: darkmagenta;
+            background-color: burlywood;
+        }
+
+        .solution4:hover .content4 {
+            transform: translatey(0);
+        }
+
+        .solution4:hover.solution4 {
+            transform: translatex(10%);
+        }
+
+
+        .solution5 {
+            /* background-color: red; */
+            height: 40vh;
+            width: 50vh;
+            padding: 5px;
+            font-size: x-large;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content5 {
+            transform: translatey(100%);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            color: darkmagenta;
+            background-color: burlywood;
+        }
+
+        .solution5:hover .content5 {
+            transform: translatey(0);
+        }
+
+        .solution5:hover.solution5 {
+            transform: translatex(10%);
+        }
+
+        .solution6 {
+            /* background-color: red; */
+            height: 40vh;
+            width: 50vh;
+            padding: 5px;
+            font-size: x-large;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .content6 {
+            transform: translatey(100%);
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            color: darkmagenta;
+            background-color: burlywood;
+        }
+
+        .solution6:hover .content6 {
+            transform: translatey(0);
+        }
+
+        .solution6:hover.solution6 {
+            transform: translatex(10%);
+        }
+
+        /* feature start  */
+
+        .features {
+            justify-content: space-evenly;
+        }
+
+        .leftfeature {
+            display: flex;
+            background-color: skyblue;
+            height: 635px;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .rightfeature {
+            display: flex;
+        }
+
+        .box3 {
+
+            border: 1px grey dotted;
+            height: 30px;
+            margin-left: 100px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            width: 30%;
+            color: gray;
+            display: flex;
+            width: 30%;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 250px;
+        }
+
+        .choose {
+            font-size: 30px;
+            font-family: Haettenschweiler, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        /* feature end  */
+
+        /* doctors start  */
+
+
+        .doctress {
+            justify-content: space-around;
+            display: flex;
+            box-sizing: border-box;
+        }
+
+
+        .box4 {
+
+            border: 1px grey dotted;
+            height: 30px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            width: 5%;
+            color: gray;
+            margin-left: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .DOC1 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC1 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc1 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 10%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC1:hover .doc1 {
+            transform: translateY(0);
+        }
+
+        .DOC1:hover img {
+            transform: translateX(10%);
+        }
+
+        .DOC2 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC2 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc2 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 10%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC2:hover .doc2 {
+            transform: translateY(0);
+        }
+
+        .DOC2:hover img {
+            transform: translateX(10%);
+        }
+
+        .DOC3 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC3 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc3 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 10%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC3:hover .doc3 {
+            transform: translateY(0);
+        }
+
+        .DOC3:hover img {
+            transform: translateX(10%);
+        }
+
+        .DOC4 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC4 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc4 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 10%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC4:hover .doc4 {
+            transform: translateY(0);
+        }
+
+        .DOC4:hover img {
+            transform: translateX(10%);
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- top    -->
+
+    <div class="top">
+
+        <!-- addres -->
+        <i class="fa-solid fa-map-pin"></i> 123 Street, New York, USA
+
+        <span style="margin-left: 25px;"><i class="fa-solid fa-clock"></i>Mon - Fri : 09.00 AM - 09.00 PM</span>
+
+        <span style="margin-left: 1000px;"><i class="fa-solid fa-phone"></i>+012 345 6789</span>
+
+        <span style="margin-left: 40px;"><a href="https://www.facebook.com/accounts/login"><i class="fa-brands fa-facebook-f"></i></a></span>
+
+        <span style="margin-left: 10px;"><a href="https://www.twitter.com/accounts/login/"><i class="fa-brands fa-twitter"></i></a></span>
+
+        <span style="margin-left: 10px;"><a href="https://www.instagram.com/accounts/login"><i class="fa-brands fa-instagram"></i></a></span>
+
+        <span style="margin-left: 10px;"><a href="https://www.linkdein.com/accounts/login"><i class="fa-brands fa-linkedin"></i></a></span>
+
+
+    </div>
+
+    <!-- top end -->
+    <br>
+
+    <!-- NAVBAR START -->
+
+    <div class="navbar">
+
+        <div class="left"><i class="fa-regular fa-hospital"></i>Klinks</div>
+
+        <div class="right">
+
+            <div class="home"><a href="">HOME</a></div>
+
+            <div class="about"><a href="">ABOUT</a></div>
+
+            <div class="service"><a href="">SERVICE</a></div>
+
+            <div class="pag"><a href="">PAGE</a></div>
+
+            <a href="" class="box">APPOINTMENT <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+    </div>
+    <!-- NAVBAR end -->
+
+
+    <!-- image START -->
+
+    <div class="image">
+
+        <div class="box1 ">Good Health Is The Root Of All Heppiness
+            <br><br>
+            |123
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|1234&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|12345
+            <br>
+            Doctor
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|patient&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|staff
+        </div>
+
+        <div class="right"><img src="carousel-2.jpg" alt=""></div>
+
+
+    </div>
+    <!-- image end  -->
+
+
+    <!-- about start  -->
+    <br><br>
+
+
+    <div class="about">
+
+        <div class="left1"><img src="300-SM1053540.jpg" alt=""></div>
+        <div class="img"><img src="300-SM1053540.jpg" alt=""></div>
+
+        <div class="right1">
+            <p>Why You Trust Us</p>
+
+            <BR></BR>
+            <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+            <br>
+            <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum.
+                Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+            <br>
+            <p><i class="fa-solid fa-check fa-beat-fade"></i> Quality Health Care</p>
+            <br>
+            <p><i class="fa-solid fa-check fa-beat-fade"></i> Doctors</p>
+        </div>
+
+    </div>
+    <!-- about end  -->
+    <BR></BR>
+
+    <!-- service start -->
+    <div class="services box2">Service</div>
+    <br>
+    <div class="health">Health Care Solution</div>
+
+    <BR></BR>
+
+    <div class="dieases">
+
+        <div class="solution1"><span style="margin-top: -150px;"><i class="fa-solid fa-heart"></i></span>
+
+            <br>
+
+            Cardiology
+
+            <br>
+            <br>
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+
+
+            <div class="content1">+ Read more</div>
+        </div>
+
+
+        <div class="solution2"><span style="margin-top: -150px;"><i class="fa-solid fa-lungs"></i></span>
+            <br>
+            Pulmonary
+            <br>
+            <br>
+            Erat ipsum
+            justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+            <div class="content2">+ Read More</div>
+        </div>
+
+
+        <div class="solution3"><span style="margin-top: -150px;"><i class="fa-solid fa-lungs"></i></span>
+            <br>
+            Neurology
+            <br>
+            <br>
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.
+
+            <div class="content3">+ Read More</div>
+
+        </div>
+    </div>
+
+    <div class="dieases2">
+
+        <div class="solution4"><span style="margin-top: -150px;"><i class="fa-solid fa-wheelchair"></i></span>
+
+            <br>
+
+            Orthopedics
+
+            <br>
+            <br>
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+
+
+            <div class="content4">+ Read more</div>
+        </div>
+
+
+        <div class="solution5"><span style="margin-top: -150px;"><i class="fa-solid fa-teeth"></i></span>
+
+            <br>
+
+
+            Dental Surgery
+
+            <br>
+            <br>
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+
+
+            <div class="content5">+ Read more</div>
+        </div>
+
+
+        <div class="solution6"><span style="margin-top: -150px;"><i class="fa-solid fa-vial-virus"></i></span>
+
+            <br>
+
+            Laboratory
+
+            <br>
+            <br>
+            Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
+
+
+            <div class="content6">+ Read more</div>
+        </div>
+
+    </div>
+
+    <BR></BR>
+    <!-- service end  -->
+
+    <BR></BR>
+    <!-- feaur start  -->
+
+
+
+    <div class="features">
+
+        <div class="leftfeature ">
+            <div class="box3">Feature</div>
+            <BR></BR>
+            <BR></BR>
+
+            <div class="choose">Why Choose Us
+                <BR></BR>
+
+                Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet
+                <BR></BR>
+
+                Doctor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quality
+                <BR></BR>
+
+                Constulant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Staff
+            </div>
+
+            <div class="rightfeature"><img src="feature1.jpg" alt=""></div>
+        </div>
+    </div>
+
+    <!-- featue end  -->
+
+
+    <!-- doctors start  -->
+
+    <BR></BR>
+    <BR></BR>
+
+    <div class="doctors">
+
+        <div class="box4"> Doctors</div>
+    </div>
+
+    <BR></BR>
+
+    <div class="doctress">
+        <section class="DOC1">
+            <img src="team-1.jpg" />
+            <article class="doc1">
+
+
+                <a href="https://www.instagram.com/accounts/login/"><img src="insta.jpg" alt="" width="40px"></a>&nbsp;
+                <a href="https://www.facebook.com/accounts/login/"><img src="fb.png" alt="" width="40px"></a>
+                <a href="https://www.twitter.com/accounts/login/"><img src="twitter.png" alt="" width="40px"></a>
+            </article>
+        </section>
+
+        <section class="DOC2">
+            <img src="team-2.jpg" />
+            <article class="doc2">
+
+
+                <a href="https://www.instagram.com/accounts/login/"><img src="insta.jpg" alt="" width="40px"></a>&nbsp;
+                <a href="https://www.facebook.com/accounts/login/"><img src="fb.png" alt="" width="40px"></a>
+                <a href="https://www.twitter.com/accounts/login/"><img src="twitter.png" alt="" width="40px"></a>
+            </article>
+        </section>
+        <section class="DOC3">
+            <img src="team-3.jpg" />
+            <article class="doc3">
+
+
+                <a href="https://www.instagram.com/accounts/login/"><img src="insta.jpg" alt="" width="40px"></a>&nbsp;
+                <a href="https://www.facebook.com/accounts/login/"><img src="fb.png" alt="" width="40px"></a>
+                <a href="https://www.twitter.com/accounts/login/"><img src="twitter.png" alt="" width="40px"></a>
+            </article>
+        </section>
+        <section class="DOC4">
+            <img src="team-4.jpg" />
+            <article class="doc4">
+
+
+                <a href="https://www.instagram.com/accounts/login/"><img src="insta.jpg" alt="" width="40px"></a>&nbsp;
+                <a href="https://www.facebook.com/accounts/login/"><img src="fb.png" alt="" width="40px"></a>
+                <a href="https://www.twitter.com/accounts/login/"><img src="twitter.png" alt="" width="40px"></a>
+            </article>
+        </section>
+
+
+
+    </div>
+
+
+</body>
+
+</html>
