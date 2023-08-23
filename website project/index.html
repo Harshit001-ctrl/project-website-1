@@ -196,7 +196,6 @@
 
         .solution1 {
             height: 40vh;
-            /* background-color: red; */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -220,16 +219,30 @@
             width: 100%;
             transition: all .5s;
             color: darkmagenta;
-            background-color: burlywood;
+            background-color: transparent;
+        }
+
+        .content1 :hover {
+            color: red;
         }
 
         .solution1:hover .content1 {
             transform: translateY(0);
+            background-color: pink;
+
+
         }
 
         .solution1:hover.solution1 {
-            transform: translateX(10%);
+            transform: translateZ(10%);
         }
+
+        .content1 a {
+            text-decoration: none;
+
+        }
+
+
 
         .solution2 {
             height: 40vh;
@@ -255,16 +268,27 @@
             width: 100%;
             transition: all .5s;
             color: darkmagenta;
-            background-color: burlywood;
+            background-color: transparent;
 
+        }
+
+        .content2 a:hover {
+            color: red;
+        }
+
+        .content2 a {
+            text-decoration: none;
         }
 
         .solution2:hover .content2 {
             transform: translateY(0);
+            background-color: pink;
+
         }
 
         .solution2:hover.solution2 {
-            transform: translateX(10%);
+            transform: translateZ(10%);
+
         }
 
         .solution3 {
@@ -292,15 +316,25 @@
             width: 100%;
             transition: all .5s;
             color: darkmagenta;
-            background-color: burlywood;
+            background-color: transparent;
+        }
+
+        .content3 a:hover {
+            color: red;
+        }
+
+        .content3 a {
+            text-decoration: none;
         }
 
         .solution3:hover .content3 {
             transform: translatey(0);
+            background-color: pink;
         }
 
         .solution3:hover.solution3 {
-            transform: translatex(10%);
+            transform: translateZ(10%);
+
         }
 
 
@@ -337,15 +371,26 @@
             width: 100%;
             transition: all .5s;
             color: darkmagenta;
-            background-color: burlywood;
+            background-color: transparent;
+        }
+
+        .content4 a:hover {
+            color: red;
+        }
+
+        .content4 a {
+            text-decoration: none;
         }
 
         .solution4:hover .content4 {
             transform: translatey(0);
+            background-color: pink;
+
         }
 
         .solution4:hover.solution4 {
-            transform: translatex(10%);
+            transform: translateZ(10%);
+
         }
 
 
@@ -374,15 +419,26 @@
             width: 100%;
             transition: all .5s;
             color: darkmagenta;
-            background-color: burlywood;
+            background-color: transparent;
+        }
+
+        .content5 a:hover {
+            color: red;
+        }
+
+        .content5 a {
+            text-decoration: none;
         }
 
         .solution5:hover .content5 {
             transform: translatey(0);
+            background-color: pink;
+
         }
 
         .solution5:hover.solution5 {
-            transform: translatex(10%);
+            transform: translateZ(10%);
+
         }
 
         .solution6 {
@@ -410,15 +466,25 @@
             width: 100%;
             transition: all .5s;
             color: darkmagenta;
-            background-color: burlywood;
+            background-color: transparent;
+        }
+
+        .content6 a:hover {
+            color: red;
+        }
+
+        .content6 a {
+            text-decoration: none;
         }
 
         .solution6:hover .content6 {
             transform: translatey(0);
+            background-color: pink;
         }
 
         .solution6:hover.solution6 {
-            transform: translatex(10%);
+            transform: translateZ(10%);
+
         }
 
         /* feature start  */
@@ -449,9 +515,9 @@
             font-family: sans-serif;
             font-size: 20px;
             width: 20%;
-            
+
             display: flex;
-           
+
             align-items: center;
             justify-content: center;
             margin-bottom: 250px;
@@ -507,6 +573,7 @@
         .DOC1 img {
 
             transition: all 0.5s;
+        
         }
 
         .doc1 {
@@ -517,13 +584,16 @@
             position: absolute;
             bottom: 0;
             height: 50px;
-            width: 10%;
+            justify-content: space-evenly;
+
+            width: 100%;
             transition: all .5s;
             background-color: transparent;
         }
 
         .DOC1:hover .doc1 {
             transform: translateY(0);
+            background-color: pink;
         }
 
         .DOC1:hover img {
@@ -552,14 +622,18 @@
             display: flex;
             position: absolute;
             bottom: 0;
+            justify-content: space-evenly;
+
             height: 50px;
-            width: 10%;
+            width: 100%;
             transition: all .5s;
             background-color: transparent;
         }
 
         .DOC2:hover .doc2 {
             transform: translateY(0);
+            background-color: pink;
+
         }
 
         .DOC2:hover img {
@@ -589,13 +663,17 @@
             position: absolute;
             bottom: 0;
             height: 50px;
-            width: 10%;
+            justify-content: space-evenly;
+
+            width: 100%;
             transition: all .5s;
             background-color: transparent;
         }
 
         .DOC3:hover .doc3 {
             transform: translateY(0);
+            background-color: pink;
+
         }
 
         .DOC3:hover img {
@@ -625,37 +703,43 @@
             position: absolute;
             bottom: 0;
             height: 50px;
-            width: 10%;
+            width: 100%;
+            justify-content: space-evenly;
             transition: all .5s;
             background-color: transparent;
         }
 
         .DOC4:hover .doc4 {
             transform: translateY(0);
+            background-color: pink;
+
         }
 
         .DOC4:hover img {
             transform: translateY(10%);
         }
-     /* doctor animation start  */
-        .doctress{
-            animation-name:slidein ;
-            animation-delay: 3s;
-            animation-duration: 4s;
+
+        /* doctor animation start  */
+        .doctress {
+            animation-name: slidein;
+            animation-delay: s;
+            animation-duration: 1s;
             animation-iteration-count: 2;
         }
 
         @keyframes slidein {
-            from{
+            from {
                 margin-left: 100%;
                 width: 100%;
             }
-            to{
-               margin-left: 0%;
+
+            to {
+                margin-left: 0%;
                 width: 100%;
             }
-            
+
         }
+
         /* doctor animation end  */
     </style>
 
@@ -675,13 +759,17 @@
 
         <span style="margin-left: 1000px;"><i class="fa-solid fa-phone"></i>+012 345 6789</span>
 
-        <span style="margin-left: 40px;"><a href="https://www.facebook.com/accounts/login"><i class="fa-brands fa-facebook-f"></i></a></span>
+        <span style="margin-left: 40px;"><a href="https://www.facebook.com/accounts/login"><i
+                    class="fa-brands fa-facebook-f"></i></a></span>
 
-        <span style="margin-left: 10px;"><a href="https://www.twitter.com/accounts/login/"><i class="fa-brands fa-twitter"></i></a></span>
+        <span style="margin-left: 10px;"><a href="https://www.twitter.com/accounts/login/"><i
+                    class="fa-brands fa-twitter"></i></a></span>
 
-        <span style="margin-left: 10px;"><a href="https://www.instagram.com/accounts/login"><i class="fa-brands fa-instagram"></i></a></span>
+        <span style="margin-left: 10px;"><a href="https://www.instagram.com/accounts/login"><i
+                    class="fa-brands fa-instagram"></i></a></span>
 
-        <span style="margin-left: 10px;"><a href="https://www.linkdein.com/accounts/login"><i class="fa-brands fa-linkedin"></i></a></span>
+        <span style="margin-left: 10px;"><a href="https://www.linkdein.com/accounts/login"><i
+                    class="fa-brands fa-linkedin"></i></a></span>
 
 
     </div>
@@ -782,7 +870,7 @@
             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
 
 
-            <div class="content1">+ Read more</div>
+            <div class="content1"><a href="">+ Read more</a></div>
         </div>
 
 
@@ -793,7 +881,7 @@
             <br>
             Erat ipsum
             justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
-            <div class="content2">+ Read More</div>
+            <div class="content2"><a href="">+ Read More</a></div>
         </div>
 
 
@@ -804,7 +892,7 @@
             <br>
             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet.
 
-            <div class="content3">+ Read More</div>
+            <div class="content3"><a href="">+ Read More</a></div>
 
         </div>
     </div>
@@ -822,7 +910,7 @@
             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
 
 
-            <div class="content4">+ Read more</div>
+            <div class="content4"><a href="">+ Read More</a></div>
         </div>
 
 
@@ -838,7 +926,7 @@
             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
 
 
-            <div class="content5">+ Read more</div>
+            <div class="content5"><a href="">+ Read More</a></div>
         </div>
 
 
@@ -853,7 +941,7 @@
             Erat ipsum justo amet duo et elitr dolor, est duo duo eos lorem sed diam stet diam sed stet
 
 
-            <div class="content6">+ Read more</div>
+            <div class="content6"><a href="">+ Read More</a></div>
         </div>
 
     </div>
