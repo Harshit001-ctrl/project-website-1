@@ -444,13 +444,14 @@
             border: 1px grey dotted;
             height: 30px;
             margin-left: 100px;
+            margin-top: -100px;
             border-radius: 30px;
             font-family: sans-serif;
             font-size: 20px;
-            width: 30%;
-            color: gray;
+            width: 20%;
+            
             display: flex;
-            width: 30%;
+           
             align-items: center;
             justify-content: center;
             margin-bottom: 250px;
@@ -526,7 +527,7 @@
         }
 
         .DOC1:hover img {
-            transform: translateX(10%);
+            transform: translateY(10%);
         }
 
         .DOC2 {
@@ -562,7 +563,7 @@
         }
 
         .DOC2:hover img {
-            transform: translateX(10%);
+            transform: translateY(10%);
         }
 
         .DOC3 {
@@ -598,7 +599,7 @@
         }
 
         .DOC3:hover img {
-            transform: translateX(10%);
+            transform: translateY(10%);
         }
 
         .DOC4 {
@@ -634,8 +635,28 @@
         }
 
         .DOC4:hover img {
-            transform: translateX(10%);
+            transform: translateY(10%);
         }
+     /* doctor animation start  */
+        .doctress{
+            animation-name:slidein ;
+            animation-delay: 3s;
+            animation-duration: 4s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes slidein {
+            from{
+                margin-left: 100%;
+                width: 100%;
+            }
+            to{
+               margin-left: 0%;
+                width: 100%;
+            }
+            
+        }
+        /* doctor animation end  */
     </style>
 
 
