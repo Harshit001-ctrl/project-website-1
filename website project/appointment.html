@@ -96,7 +96,7 @@
         /* appointment left start  */
         .appointment {
             display: flex;
-            /* background-color: rebeccapurple; */
+            box-sizing: border-box;
         }
 
         .leftappointment {
@@ -106,6 +106,7 @@
 
         .rightappointment {
             display: flex;
+            margin: 30px;
             width: 50%;
         }
 
@@ -459,27 +460,65 @@
         }
 
         /* fotter end */
+
+        
+        .top {
+            margin: 20px;
+            padding: 2px;
+            margin-left: 40px;
+            font-style: normal;
+        }
     </style>
 
 
 </head>
 
 <body>
+
+    
+    <!-- top    -->
+
+    <div class="top">
+
+        <!-- addres -->
+        <i class="fa-solid fa-map-pin"></i> 123 Street, New York, USA
+
+        <span style="margin-left: 25px;"><i class="fa-solid fa-clock"></i>Mon - Fri : 09.00 AM - 09.00 PM</span>
+
+        <span style="margin-left: 1000px;"><i class="fa-solid fa-phone"></i>+012 345 6789</span>
+
+        <span style="margin-left: 40px;"><a href="https://www.facebook.com/accounts/login"><i
+                    class="fa-brands fa-facebook-f"></i></a></span>
+
+        <span style="margin-left: 10px;"><a href="https://www.twitter.com/accounts/login/"><i
+                    class="fa-brands fa-twitter"></i></a></span>
+
+        <span style="margin-left: 10px;"><a href="https://www.instagram.com/accounts/login"><i
+                    class="fa-brands fa-instagram"></i></a></span>
+
+        <span style="margin-left: 10px;"><a href="https://www.linkdein.com/accounts/login"><i
+                    class="fa-brands fa-linkedin"></i></a></span>
+
+
+    </div>
+
+    <!-- top end -->
+
     <div class="navbar">
 
         <div class="left"><i class="fa-regular fa-hospital"></i>Klinks</div>
 
         <div class="right">
 
-            <div class="home"><a href="">HOME</a></div>
+            <div class="Home"><a href="">HOME</a></div>
 
-            <div class="about"><a href="about.html">ABOUT</a></div>
+            <div class="About"><a href="about.html">ABOUT</a></div>
 
-            <div class="service"><a href="">SERVICE</a></div>
+            <div class="Service"><a href="service.html">SERVICE</a></div>
 
-            <div class="pag"><a href="">PAGE</a></div>
+            <div class="Contact"><a href="contact.html">CONTACT</a></div>
 
-            <a href="" class="box">APPOINTMENT <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="appointment.html" class="box">APPOINTMENT <i class="fa-solid fa-arrow-right"></i></a>
 
         </div>
 
