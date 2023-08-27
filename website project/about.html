@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/92f4809345.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        /* .navbar */
+        .navbar {
+            font-size: 15px;
+            color: dark black;
+            z-index: 1;
+            width: 100%;
+            position: sticky;
+            top: 0px;
+            background-color: white;
+            display: flex;
+        }
+
+        .left {
+            display: flex;
+            width: 60%;
+            font-size: 50px;
+            margin-left: 30px;
+
+        }
+
+        .right {
+            display: flex;
+            width: 40%;
+            justify-content: space-around;
+            font-size: 17px;
+            align-items: center;
+
+        }
+
+        .right a {
+            text-decoration: none;
+            padding: 18px;
+            color: black;
+        }
+
+        .home a {
+            color: blueviolet;
+        }
+
+        .right a:hover {
+            background-color: crimson;
+            border-radius: 6px;
+            color: white;
+        }
+
+        .box {
+            padding: 9px;
+            color: white;
+            text-decoration: none;
+            background-color: skyblue;
+        }
+
+        .navbar .left {
+            color: blue;
+        }
+
+        /* NAVBAR END */
+
+        /*  */
+        .about1 {
+            position: relative;
+        }
+
+        .text {
+            position: absolute;
+            top: 0;
+            color: blue;
+            padding: 150px;
+            font-size: 25px;
+        }
+
+        .text p {
+            color: brown;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        /*  */
+
+        .left1 {
+            display: flex;
+            margin: 110px;
+            width: 60%;
+
+        }
+
+        .img {
+            margin-top: -250px;
+            margin-left: 70px;
+            width: 60%;
+            /* margin: 100px; */
+
+        }
+
+        .right1 {
+            float: right;
+            margin-top: -600px;
+            width: 40%;
+            justify-content: space-between;
+            align-items: center;
+            /* color: salmon; */
+        }
+
+        .right1 p {
+            color: gray;
+            font-family: sans-serif;
+            font-weight: bolder;
+        }
+
+        /* about end */
+
+        /* feature */
+
+        .features {
+            justify-content: space-evenly;
+        }
+
+        .leftfeature {
+            display: flex;
+            background-color: skyblue;
+            height: 635px;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        .rightfeature {
+            display: flex;
+        }
+
+        .box3 {
+
+            border: 1px grey dotted;
+            height: 30px;
+            margin-left: 100px;
+            margin-top: -100px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            width: 20%;
+
+            display: flex;
+
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 250px;
+        }
+
+        .choose {
+            font-size: 30px;
+            font-family: Haettenschweiler, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;
+        }
+
+        /* feature end */
+ 
+         /* doctor start */
+
+         .doctress {
+            justify-content: space-around;
+            display: flex;
+            margin: 30px;
+            box-sizing: border-box;
+        }
+
+
+        .box4 {
+
+            border: 1px grey dotted;
+            height: 30px;
+            border-radius: 30px;
+            font-family: sans-serif;
+            font-size: 20px;
+            width: 5%;
+            color: gray;
+            margin-left: 900px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .DOC1 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC1 img {
+
+            transition: all 0.5s;
+
+        }
+
+        .doc1 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            justify-content: space-evenly;
+
+            width: 100%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC1:hover .doc1 {
+            transform: translateY(0);
+            background-color: pink;
+        }
+
+        .DOC1:hover img {
+            transform: translateY(10%);
+        }
+
+        .DOC2 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC2 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc2 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            justify-content: space-evenly;
+
+            height: 50px;
+            width: 100%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC2:hover .doc2 {
+            transform: translateY(0);
+            background-color: pink;
+
+        }
+
+        .DOC2:hover img {
+            transform: translateY(10%);
+        }
+
+        .DOC3 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC3 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc3 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            justify-content: space-evenly;
+
+            width: 100%;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC3:hover .doc3 {
+            transform: translateY(0);
+            background-color: pink;
+
+        }
+
+        .DOC3:hover img {
+            transform: translateY(10%);
+        }
+
+        .DOC4 {
+
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .DOC4 img {
+
+            transition: all 0.5s;
+        }
+
+        .doc4 {
+            transform: translatey(100%);
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            position: absolute;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            justify-content: space-evenly;
+            transition: all .5s;
+            background-color: transparent;
+        }
+
+        .DOC4:hover .doc4 {
+            transform: translateY(0);
+            background-color: pink;
+
+        }
+
+        .DOC4:hover img {
+            transform: translateY(10%);
+        }
+
+        /* doctor animation start  */
+        .doctress {
+            animation-name: slidein;
+            animation-delay: 3.5s;
+            animation-duration: 3s;
+            animation-iteration-count: 2;
+        }
+
+        @keyframes slidein {
+            from {
+                margin-left: 100%;
+                width: 100%;
+            }
+
+            to {
+                margin-left: 0%;
+                width: 100%;
+            }
+
+        }
+
+        /* fotter start */
+
+        
+        .fotter {
+            background-color: #1B2C51;
+            height: 400px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-evenly;
+            /* padding: 200px; */
+
+        }
+
+        /* addres start  */
+
+        .address {
+            color: white;
+            font-weight: 300;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin-top: 50px;
+            margin-left: 200px;
+
+        }
+
+        .addressbox {
+            background-color: transparent;
+            height: 300px;
+            width: 350px;
+        }
+
+        .addressbox h1 {
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: sans-serif;
+        }
+
+        /* addres end */
+
+        /* service start  */
+
+        .services1 {
+            color: white;
+            font-weight: 300;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+
+        .servicebox1 {
+            background-color: transparent;
+            height: 300px;
+            width: 350px;
+        }
+
+        .services1 a {
+            color: white;
+            font-weight: 300;
+            font-family: sans-serif;
+            text-decoration: none;
+
+        }
+
+        .services1 a:hover {
+
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 10px;
+            transition: .5s;
+            color: #0463FA;
+        }
+
+        .servicebox1 h1 {
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        /* service end  */
+
+        /* ouick link start */
+
+        .Quicklink {
+            color: white;
+            font-weight: 300;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin-top: 50px;
+
+        }
+
+        .quicklink {
+            background-color: transparent;
+            height: 300px;
+            width: 350px;
+        }
+
+        .Quicklink a {
+            color: white;
+            font-weight: 300;
+            font-family: sans-serif;
+            text-decoration: none;
+
+        }
+
+        .Quicklink a:hover {
+
+            text-decoration: none;
+            text-transform: capitalize;
+            padding: 10px;
+            transition: .5s;
+            color: #0463FA;
+        }
+
+        .quicklink h1 {
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+        /* quick link end */
+
+        .Newsletter {
+            color: white;
+            font-weight: 300;
+            font-family: sans-serif;
+            box-sizing: border-box;
+            margin-top: 50px;
+
+        }
+
+        .newsletter {
+            background-color: transparent;
+            height: 300px;
+            width: 500px;
+            max-width: 100%;
+            position: relative;
+        }
+
+
+        .newsletter h1 {
+            font-weight: bolder;
+            font-size: 20px;
+            font-family: sans-serif;
+
+        }
+
+
+
+        input[type=emails] {
+            width: 70%;
+            border-radius: 5px;
+            border: none;
+            transition: .1s all ease-in-out;
+            font-size: 20px;
+            padding: 15px;
+        }
+
+        input[type=emails]:focus {
+            background-color: wheat;
+            color: gray;
+        }
+
+        button {
+            padding: 12px;
+            border-radius: 20px;
+            left: 60%;
+            top: 38.5%;
+            text-transform: capitalize;
+            position: absolute;
+            border: none;
+            background-color: gold;
+        }
+
+        button a {
+            text-decoration: none;
+        }
+
+        /* fotter end */
+
+    </style>
+
+</head>
+
+<body>
+    <div class="navbar">
+
+        <div class="left"><i class="fa-regular fa-hospital"></i>Klinks</div>
+
+        <div class="right">
+
+            <div class="home"><a href="">HOME</a></div>
+
+            <div class="about"><a href="about.html">ABOUT</a></div>
+
+            <div class="service"><a href="">SERVICE</a></div>
+
+            <div class="pag"><a href="">PAGE</a></div>
+
+            <a href="" class="box">APPOINTMENT <i class="fa-solid fa-arrow-right"></i></a>
+
+        </div>
+
+    </div>
+
+     
+    <div class="about1">
+
+        <div class="aboutbox1">
+            <img src="about-1.jpg" alt="" width="1890px" height="450px">
+
+            <div class="text">
+                ABOUT US
+                <p>Home/Page/About</p>
+
+            </div>
+
+
+        </div>
+
+        <div class="about">
+
+            <div class="left1"><img src="300-SM1053540.jpg" alt="" width="600px"></div>
+            <div class="img"><img src="300-SM1053540.jpg" alt="" width="600px"></div>
+
+            <div class="right1">
+                <p>Why You Trust Us</p>
+
+                <BR></BR>
+                <p>Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                    ipsum et lorem et sit, sed stet lorem sit clita duo justo magna dolore erat amet</p>
+
+                <br>
+                <p>Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum.
+                    Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
+                <br>
+                <p><i class="fa-solid fa-check fa-beat-fade"></i> Quality Health Care</p>
+                <br>
+                <p><i class="fa-solid fa-check fa-beat-fade"></i> Doctors</p>
+            </div>
+
+        </div>
+
+
+        <div class="features">
+
+            <div class="leftfeature ">
+                <div class="box3">Feature</div>
+                <BR></BR>
+                <BR></BR>
+
+                <div class="choose">Why Choose Us
+                    <BR></BR>
+
+                    Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
+                    ipsum et lorem et sit, sed stet lorem sit clita duo justo erat amet
+                    <BR></BR>
+
+                    Doctor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Quality
+                    <BR></BR>
+
+                    Constulant &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Staff
+                </div>
+
+                <div class="rightfeature"><img src="feature1.jpg" alt=""></div>
+            </div>
+        </div>
+
+         <BR></BR>
+
+        <div class="doctors">
+
+            <div class="box4"> Doctors</div>
+        </div>
+    
+        <BR></BR>
+    
+        <div class="doctress">
+            <section class="DOC1">
+                <img src="team-1.jpg" width="300px" />
+                <article class="doc1">
+    
+    
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/accounts/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/accounts/login/"><i class="fa-brands fa-twitter"></i></a>
+                </article>
+            </section>
+    
+            <section class="DOC2">
+                <img src="team-2.jpg" width="300px" />
+                <article class="doc2">
+    
+    
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/accounts/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/accounts/login/"><i class="fa-brands fa-twitter"></i></a>
+                </article>
+            </section>
+            <section class="DOC3">
+                <img src="team-3.jpg" width="300px" />
+                <article class="doc3">
+    
+    
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/accounts/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/accounts/login/"><i class="fa-brands fa-twitter"></i></a>
+                </article>
+            </section>
+            <section class="DOC4">
+                <img src="team-4.jpg" width="300px" />
+                <article class="doc4">
+    
+    
+                    <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>&nbsp;
+                    <a href="https://www.facebook.com/accounts/login/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.twitter.com/accounts/login/"><i class="fa-brands fa-twitter"></i></a>
+                </article>
+            </section>
+        </div>
+
+<BR></BR>
+
+        <div class="fotter">
+
+            <div class="address">
+                <div class="addressbox">
+                    <h1>ADDRESS</h1>
+                    <BR></BR>
+                    <i class="fa-solid fa-map-pin"></i> 123 Street, New York, USA
+                    <br>
+                    <br>
+                    <i class="fa-solid fa-phone"></i> +012 345 67890
+                    <br>
+                    <br>
+                    <i class="fa-brands fa-mailchimp"></i> info@example.com
+    
+                </div>
+            </div>
+    
+            <div class="services1">
+                <div class="servicebox1">
+                    <h1>SERVICES</h1>
+    
+                    <BR></BR>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Cardiology</a>
+                    <br>
+                    <br>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Pulmonary</a>
+    
+                    <br>
+                    <br>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Neurology</a>
+    
+    
+                    <br>
+                    <br>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Orthopedics</a>
+                </div>
+            </div>
+    
+            <div class="Quicklink">
+    
+                <div class="quicklink">
+                    <h1>QUICK LINK</h1>
+    
+                    <BR></BR>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> About Us</a>
+                    <br>
+                    <br>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Contact Us</a>
+    
+                    <br>
+                    <br>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Our Services</a>
+    
+    
+                    <br>
+                    <br>
+                    <a href=""><i class="fa-solid fa-arrow-right"></i> Term & Condition</a>
+                </div>
+    
+    
+            </div>
+    
+            <div class="Newsletter">
+    
+                <div class="newsletter">
+                    <h1>NEWS LETTER</h1>
+                    <BR></BR>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    <BR></BR>
+                    <input type="emails" name="" id="" placeholder="Your Email">
+                    <button><a href="">Submit</a></button>
+    
+                </div>
+    
+            </div>
+        </div>
+    
+    
+
+
+
+    </div>
+
+
+</body>
+
+</html>
